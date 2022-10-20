@@ -23,3 +23,16 @@ DROP CONSTRAINT PK__Users__3214EC0775A46987
 ALTER TABLE Users
 ADD CONSTRAINT PK_CompositeIdUsername
 PRIMARY KEY(Id,Username)
+
+ALTER TABLE Users
+ADD CONSTRAINT DF_LastLoginTime
+DEFAULT GETDATE() FOR LastLoginTime
+
+ALTER TABLE Users
+ADD CONSTRAINT DF_LastLoginTime
+DEFAULT GETDATE() FOR LastLoginTime
+
+INSERT INTO Users(Username, [Password],ProfilePicture, IsDeleted) VALUES
+	('TestTttt', '123', NULL, 1)
+
+SELECT * FROM Users
