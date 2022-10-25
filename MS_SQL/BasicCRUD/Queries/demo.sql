@@ -35,7 +35,7 @@ INSERT INTO Towns VALUES ('Imeto')
 -- Inserting rows into existing table
 INSERT INTO Projects (Name, StartDate)
 SELECT Name, GETDATE()
-       FROM Departments
+	   FROM Departments
 
 SELECT * FROM Projects
 
@@ -44,3 +44,39 @@ SELECT FirstName, LastName, JobTitle
   FROM Employees
 
 SELECT * FROM MyFiredEmployees
+
+-- Sequence
+CREATE SEQUENCE sq_MySequence
+	   	 AS INT
+	 START WITH 1
+   INCREMENT BY 1
+
+SELECT NEXT VALUE FOR sq_MySequence
+
+CREATE SEQUENCE sq_MySequence2
+	   	 AS INT
+	 START WITH 10
+   INCREMENT BY 10
+       MINVALUE 10
+       MAXVALUE 50
+	      CYCLE
+
+SELECT NEXT VALUE FOR sq_MySequence2
+
+-- Deleting data
+SELECT * FROM Addresses
+		WHERE TownID = 1
+
+UPDATE Addresses
+   SET TownID = NULL
+ WHERE TownID = 1
+
+DELETE FROM Towns
+	  WHERE TownID = 1
+--
+
+UPDATE Projects
+   SET EndDate = GETDATE()
+ WHERE EndDate IS NULL
+  
+   
