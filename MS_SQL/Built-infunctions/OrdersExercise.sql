@@ -1,10 +1,10 @@
 --Hide payment number
 CREATE VIEW v_PublicPaymentsInfo AS
-SELECT 
-	CustomerID,
-	FirstName,
-	LastName,
-	CONCAT(SUBSTRING(PaymentNumber,1,6), REPLICATE('*', LEN(PaymentNumber) - 6)) AS PaymentNumber
+SELECT CustomerID, FirstName, LastName,
+	CONCAT(
+		SUBSTRING(PaymentNumber,1,6), 
+		REPLICATE('*', LEN(PaymentNumber) - 6))
+		AS PaymentNumber
 FROM Customers
 
 GO
@@ -29,3 +29,29 @@ FROM Products
 -- DATEPART - exctract a segment from a date as an int
 SELECT 
 	DATEPART(WEEK, '2022-12-31')
+
+-- Problem Quarterly Report
+SELECT Id, ProductName, 
+	DATEPART(QUARTER, OrderDate) AS Quarter, 
+	DATEPART(MONTH, OrderDate) AS Month, 
+	DATEPART(YEAR, OrderDate) AS Year, 
+	DATEPART(DAY, OrderDate) AS Day
+FROM Orders
+
+-- DATEDIFF - finds the difference between two dates
+SELECT [ProductName], 
+	DATEDIFF(MONTH, [OrderDate], GETDATE()) AS [ExpiredDate]
+FROM Orders
+
+--DATENAME - string representation of date's part
+SELECT
+	DATENAME(WEEKDAY, '12/31/2022') AS [Birthday - 2022],
+	DATENAME(WEEKDAY, '12/31/2023') AS [Birthday - 2023],
+	DATENAME(WEEKDAY, '12/31/2024') AS [Birthday - 2024]
+
+-- DATEADD - date arithmetic
+USE SoftUni
+
+SELECT HireDate,
+	DATEADD(YEAR, 5, HireDate) AS [Experience]
+FROM Employees
