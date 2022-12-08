@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-/****** Object:  Database [SoftUni]    Script Date: 30.11.2022 Ð³. 0:09:55 ******/
+/****** Object:  Database [SoftUni]    Script Date: 8.12.2022 ã. 20:54:34 ******/
 CREATE DATABASE [SoftUni]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -112,4 +112,5 @@ GO
 
 ALTER DATABASE [SoftUni] SET  READ_WRITE 
 GO
+
 
