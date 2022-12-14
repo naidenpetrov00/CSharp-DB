@@ -80,3 +80,40 @@ GO
 
 SELECT FirstName,LastName, Salary, dbo.udf_GetSalaryLevel(Salary) AS SalaryLevel
 FROM Employees
+--
+
+--Delete Employees and Departments
+CREATE OR ALTER PROC usp_DeleteEmployeesFromDepartment(@departmentId INT)
+AS
+BEGIN
+	DELETE 
+	FROM EmployeesProjects
+	WHERE EmployeeID IN (
+		SELECT EmployeeID 
+		FROM Employees
+		WHERE DepartmentID = @departmentId)
+
+	UPDATE Employees
+	SET ManagerID = NULL
+	WHERE ManagerID = (
+		SELECT EmployeeID 
+		FROM Employees
+		WHERE DepartmentID = @departmentId)
+
+	ALTER TABLE Departments
+	ALTER COLUMN ManagerId INT
+
+	UPDATE Departments
+	SET ManagerID = NULL
+	WHERE DepartmentID = @departmentId
+
+	DELETE FROM Employees
+	WHERE DepartmentID = @departmentId
+
+	DELETE FROM Departments
+	WHERE DepartmentID = @departmentId
+
+	SELECT COUNT(*)
+	FROM Employees
+	WHERE DepartmentID = @departmentId
+END
