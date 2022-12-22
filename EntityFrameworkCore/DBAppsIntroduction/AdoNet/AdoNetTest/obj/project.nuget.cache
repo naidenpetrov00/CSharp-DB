@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j36fDp0Rrz+F6/XV9wc03SxZr3bma9PWb8y+WGg8eGdCiIGxueou4ciTPgbq5kRWcib1IftXQ9SyPHQHUA24FQ==",
+  "dgSpecHash": "wMk7Fr97//4Pq64Jx2pFsAXkuEMlm5j989UjVZ0xpeZj4vLIpbgPR3TcIYoOEYGS4JiK/tpJnYCtN+IcMHN/jg==",
   "success": true,
   "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\DBAppsIntroduction\\AdoNet\\AdoNetTest\\AdoNetTest.csproj",
   "expectedPackageFiles": [
