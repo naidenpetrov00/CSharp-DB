@@ -1,0 +1,10 @@
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\bin\Debug\netcoreapp3.1\MiniORM.deps.json
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\bin\Debug\netcoreapp3.1\MiniORM.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\bin\Debug\netcoreapp3.1\MiniORM.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.csproj.AssemblyReference.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.AssemblyInfoInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.AssemblyInfo.cs
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.csproj.CoreCompileInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\ORMFundamentals\MiniORM\obj\Debug\netcoreapp3.1\MiniORM.pdb
