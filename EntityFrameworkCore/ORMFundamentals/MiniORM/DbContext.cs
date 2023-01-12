@@ -1,10 +1,10 @@
 ﻿namespace MiniORM
 {
     using System;
-    using System.Reflection;
-    using System.Collections.Generic;
     using System.Linq;
+    using System.Reflection;
     using System.Data.SqlClient;
+    using System.Collections.Generic;
 
     public abstract class DbContext
     {
@@ -25,19 +25,6 @@
 
             this.MapAllRelations();
         }
-
-        internal static readonly Type[] AllowedSqlTypes =
-        {
-            typeof(int),
-            typeof(bool),
-            typeof(long),
-            typeof(uint),
-            typeof(ulong),
-            typeof(string),
-            typeof(decimal),
-            typeof(DateTime)
-        };
-
         public void SaveChanges()
         {
             var dbSets = this.dbSetProperties
@@ -95,5 +82,46 @@
                 }
             }
         }
+
+        internal static readonly Type[] AllowedSqlTypes =
+        {
+            typeof(int),
+            typeof(bool),
+            typeof(long),
+            typeof(uint),
+            typeof(ulong),
+            typeof(string),
+            typeof(decimal),
+            typeof(DateTime)
+        };
+
+        private void Persist<TEntity>(DbSet<TEntity> dbSet)
+            where TEntity : class, new()
+        {
+            var tableName = GetTableName(typeof(TEntity));
+
+            var columns = this.connection
+                .FetchColumnNames(tableName)
+                .ToArray();
+
+            if (dbSet.ChangeTracker.Added.Any())
+            {
+                this.connection.InsertEntities(dbSet, tableName, columns);
+            }
+
+            var modifiedEntities = dbSet.ChangeTracker
+                .GetModifiedEntities(dbSet)
+                .ToArray();
+            if (modifiedEntities.Any())
+            {
+                this.connection.UpdateEntities(modifiedEntities, tableName, columns);
+            }
+
+            if (dbSet.ChangeTracker.Removed.Any())
+            {
+                this.connection.DeleteEntities(dbSet, tableName, columns);
+            }
+        }
+
     }
 }
