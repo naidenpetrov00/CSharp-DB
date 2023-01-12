@@ -2,10 +2,9 @@
 {
     using System;
     using System.Linq;
+    using System.Reflection;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Reflection.Metadata;
-    using System.Reflection;
 
     internal class ChangeTracker<T>
         where T : class, new()
@@ -46,11 +45,11 @@
 
             foreach (var proxyEnity in this.AllEntities)
             {
-                var primaryKeyValues = GetPrimaryKeyValues(primaryKeys, proxyEnity).ToArray();
+                var primaryKeyValues = GetPrimariKeyValues(primaryKeys, proxyEnity).ToArray();
 
                 var entity = dbSet
                     .Entities
-                    .Single(e => GetPrimaryKeyValue(primaryKeys, e).SequenceEquals(primaryKeyValues));
+                    .Single(e => GetPrimariKeyValues(primaryKeys, e).SequenceEquals(primaryKeyValues));
 
                 var isModified = IsModified(proxyEnity, entity);
                 if (isModified)
