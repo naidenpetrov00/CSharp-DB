@@ -12,7 +12,7 @@
         {
             this.Entities = entities.ToList();
             this.ChangeTracker = new ChangeTracker<TEntity>(entities);
-        }
+        }   
 
         internal ChangeTracker<TEntity> ChangeTracker { get; set; }
 
