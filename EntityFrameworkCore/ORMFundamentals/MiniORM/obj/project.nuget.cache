@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+vtThvZ1xwwi9rRO2+CyOE3OnRdWqODieLhv+RWFRv55Vpm0ja8ChJXjomaZoJccG2pp8EO7JOYhvcWHwBy5fA==",
+  "dgSpecHash": "j200Mu4qM9vWp+iooJdpHAQf6MR/F2QvX+O2ov/fM33L5htDzg4rawH781zFw02N+3c6U2VRBF+lGoEb73YYAw==",
   "success": true,
   "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\ORMFundamentals\\MiniORM\\MiniORM.csproj",
   "expectedPackageFiles": [
@@ -79,10 +79,7 @@
     "C:\\Users\\Naiden\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Naiden\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\Naiden\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

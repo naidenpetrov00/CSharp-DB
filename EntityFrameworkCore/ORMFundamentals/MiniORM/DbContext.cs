@@ -123,5 +123,28 @@
             }
         }
 
+        private void InitializeDbSets()
+        {
+            foreach (var dbSet in this.dbSetProperties)
+            {
+                var dbSetType = dbSet.Key;
+                var dbSetProperty = dbSet.Value;
+
+                var populateDbSetGeneric = typeof(DbContext)
+                    .GetMethod("PopulateDbSet", BindingFlags.Instance | BindingFlags.NonPublic)
+                    .MakeGenericMethod(dbSetType);
+
+                populateDbSetGeneric.Invoke(this, new object[] { dbSetProperty });
+            }
+        }
+
+        private void PopulateDbSet<TEntity>(PropertyInfo dbSet)
+            where TEntity : class, new()
+        {
+            var entities = LoadTableEntities<TEntity>();
+
+            var dbSetInstance = new DbSet<TEntity>(entities);
+            ReflectionHelper.ReplaceBackingField(this, dbSet.Name, dbSetInstance);
+        }
     }
 }
