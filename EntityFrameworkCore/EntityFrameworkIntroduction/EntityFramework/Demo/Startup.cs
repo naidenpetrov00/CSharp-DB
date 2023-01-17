@@ -6,17 +6,10 @@
     {
         public static void Main(string[] args)
         {
-            using (var db = new SoftUniContext())
-            {
-                var town = new Town
-                {
-                    Name = "Pernik"
-                };
+            using var db = new SoftUniContext();
 
-                db.Add(town);
 
-                db.SaveChanges();
-            }
+            
         }
     }
 }
