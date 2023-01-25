@@ -6,6 +6,8 @@
     public class StudentsDbContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
+        public DbSet<Town> Towns { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,6 +21,11 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .Entity<Student>()
+                .HasOne(s => s.Town)
+                .WithMany(t => t.Students)
+                .HasForeignKey(s => s.TownId);
         }
     }
 }
