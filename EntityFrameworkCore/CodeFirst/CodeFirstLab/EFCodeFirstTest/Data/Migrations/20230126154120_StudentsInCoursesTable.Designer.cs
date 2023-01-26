@@ -4,6 +4,7 @@ using EFCodeFirstTest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCodeFirstTest.Data.Migrations
 {
     [DbContext(typeof(StudentsDbContext))]
-    partial class StudentsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230126154120_StudentsInCoursesTable")]
+    partial class StudentsInCoursesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,36 +46,6 @@ namespace EFCodeFirstTest.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("EFCodeFirstTest.Data.Models.Homework", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Score")
-                        .HasColumnType("float");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("Homeworks");
                 });
 
             modelBuilder.Entity("EFCodeFirstTest.Data.Models.Student", b =>
@@ -152,25 +125,6 @@ namespace EFCodeFirstTest.Data.Migrations
                     b.ToTable("Towns");
                 });
 
-            modelBuilder.Entity("EFCodeFirstTest.Data.Models.Homework", b =>
-                {
-                    b.HasOne("EFCodeFirstTest.Data.Models.Course", "Course")
-                        .WithMany("Homeworks")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EFCodeFirstTest.Data.Models.Student", "Student")
-                        .WithMany("Homeworks")
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Student");
-                });
-
             modelBuilder.Entity("EFCodeFirstTest.Data.Models.Student", b =>
                 {
                     b.HasOne("EFCodeFirstTest.Data.Models.Town", "Town")
@@ -203,16 +157,12 @@ namespace EFCodeFirstTest.Data.Migrations
 
             modelBuilder.Entity("EFCodeFirstTest.Data.Models.Course", b =>
                 {
-                    b.Navigation("Homeworks");
-
                     b.Navigation("Students");
                 });
 
             modelBuilder.Entity("EFCodeFirstTest.Data.Models.Student", b =>
                 {
                     b.Navigation("Courses");
-
-                    b.Navigation("Homeworks");
                 });
 
             modelBuilder.Entity("EFCodeFirstTest.Data.Models.Town", b =>

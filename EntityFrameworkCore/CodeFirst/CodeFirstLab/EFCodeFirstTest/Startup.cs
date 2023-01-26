@@ -1,9 +1,11 @@
-﻿namespace EFCodeFirstTest
+﻿using System.Diagnostics.Tracing;
+
+namespace EFCodeFirstTest
 {
     using EFCodeFirstTest.Data;
     using EFCodeFirstTest.Data.Models;
     using Microsoft.EntityFrameworkCore;
-    using System;
+
     public class Startup
     {
         public static void Main(string[] args)
@@ -11,16 +13,15 @@
             using var db = new StudentsDbContext();
 
             db.Database.Migrate();
-
-            var result= db.Students
-                .Select(s => new
-                {
-                    FullName = s.FirstName + s.LastName,
-                    TownName = s.Town.Name
-                })
-                .ToList();
-
-            Console.WriteLine(string.Join(Environment.NewLine, result));
         }
     }
 }
+//1. Create models - ek. Students
+//2. Primary key - Id
+//3. Add Columns and their requirments
+//4. Add DbContext + DbSet
+//5. OnConfiguring - connection string
+//6. OnModelCreating - models
+//7. Realationship - ForeignKey TownId + Property Town Town + collection in other model
+//8. Add-Migration
+//9. db.Database.Migrate()

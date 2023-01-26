@@ -33,6 +33,10 @@
 
         public Town Town { get; set; }
 
+        public ICollection<StudentInCourse> Courses { get; set; } = new HashSet<StudentInCourse>();
+
+        public ICollection<Homework> Homeworks { get; set; } = new HashSet<Homework>();
+
         [NotMapped]
         public string FullName
         {
