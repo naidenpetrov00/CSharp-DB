@@ -9,7 +9,7 @@
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Visitation> Visitations { get; set; }
         public DbSet<Diagnose> Diagnoses { get; set; }
-        public DbSet<Medicament> Medicament { get; set; }
+        public DbSet<Medicament> Medicaments { get; set; }
         public DbSet<PatientMedicament> PatientMedicaments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -100,13 +100,13 @@
 
             modelBuilder
                 .Entity<PatientMedicament>()
-                .HasOne(md => md.Patient)
+                .HasOne<Patient>(md => md.Patient)
                 .WithMany(pt => pt.Prescriptions)
                 .HasForeignKey(md => md.PatientId);
 
             modelBuilder
                .Entity<PatientMedicament>()
-               .HasOne(pt => pt.Medication)
+               .HasOne<Medicament>(pt => pt.Medication)
                .WithMany(md => md.Prescriptions)
                .HasForeignKey(pt => pt.MedicamentId);
         }
