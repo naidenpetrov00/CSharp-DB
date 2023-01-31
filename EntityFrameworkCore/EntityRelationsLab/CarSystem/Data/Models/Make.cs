@@ -10,5 +10,7 @@
         [Required]
         [MaxLength(MaxName)]
         public string Name { get; set; }
+
+        public ICollection<Model> Models { get; set; } = new HashSet<Model>();
     }
 }
