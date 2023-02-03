@@ -1,10 +1,7 @@
 ﻿namespace CarSystem
 {
     using CarSystem.Data;
-    using CarSystem.Data.Models;
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore.Query.Internal;
-    using System.ComponentModel.DataAnnotations;
 
     public class Startup
     {
@@ -12,19 +9,16 @@
         {
             using var db = new CarDbContext();
 
-            db.Database.Migrate();
+            var price = 5000;
 
-            var model = new Model
-            {
-                Modification = "500",
-                Name = "CL",
-                Year = 3000
-            };
+            db.Cars
+                .Where(c => c.Price > price);
 
-            var validationContext = new ValidationContext(model);
-            var validationResults = new List<ValidationResult>();
+            var result = db.Cars
+                .FromSqlInterpolated($"SELECT * FROM Cars WHERE Price > {price}")
+                .ToList();
 
-            Validator.ValidateObject(model, validationContext, true);
+            Console.WriteLine(result);
 
             db.SaveChanges();
         }
