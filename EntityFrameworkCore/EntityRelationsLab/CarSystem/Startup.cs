@@ -1,8 +1,10 @@
 ﻿namespace CarSystem
 {
     using CarSystem.Data;
+    using CarSystem.Data.Models;
     using CarSystem.Result;
     using Microsoft.EntityFrameworkCore;
+    using Z.EntityFramework.Plus;
 
     public class Startup
     {
@@ -10,28 +12,25 @@
         {
             using var db = new CarDbContext();
 
-            var price = 5000;
+            using var data = new CarDbContext();
 
-            var r = db.Cars
-                .Where(c => c.Price > price)
-                .Select(c => new
+            // bulk delete
+            data.Cars
+                .Where(c => c.Price > 10000)
+                .Delete();
+
+            // bulk update
+            data.Cars
+                .Where(c => c.Price < 20000)
+                .Update(c => new Car
                 {
-                    FullName = c.Model.Name
+                    Price = c.Price * 1.2m
                 });
 
-            //for situations with too much load
+            var car = data.Cars
+                .FirstOrDefault(c => c.Id == 1);
 
-            var query = EF.CompileQuery<CarDbContext, IEnumerable<ResultModel>>(
-                db => db.Cars
-                 .Where(c => c.Price > price)
-                 .Select(c => new ResultModel
-                 {
-                     FullName = c.Model.Name
-                 }));
-
-            var result = query(db);
-
-            Console.WriteLine(result);
+             
 
             db.SaveChanges();
         }
