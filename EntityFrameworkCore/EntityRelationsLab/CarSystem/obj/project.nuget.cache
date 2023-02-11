@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uaBShc30/edacXXxuAnNCXS9/audA5cNgZ6e35uRVXy8QKsAbfyY2I+iAK6P9GtrTuDsuFLtlQatmhTcbfDfbQ==",
+  "dgSpecHash": "tpVhA4Q+IqdUnTwbcbhT2GppY8YNjfvSh45AkjEihU2wLvy+/OfZPiabNcjhTz4hW8Tyg5sD9SOJjQBf3LGncA==",
   "success": true,
   "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\EntityRelationsLab\\CarSystem\\CarSystem.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Naiden\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\automapper.collection\\4.0.0\\automapper.collection.4.0.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
