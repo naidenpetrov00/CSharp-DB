@@ -51,13 +51,8 @@ C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\CarSystem.csproj.AssemblyReference.cache
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\CarSystem.GeneratedMSBuildEditorConfig.editorconfig
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\CarSystem.AssemblyInfoInputs.cache
@@ -69,3 +64,11 @@ C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\CarSystem.pdb
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\CarSystem.genruntimeconfig.cache
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\obj\Debug\net6.0\ref\CarSystem.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\Z.EntityFramework.Extensions.EFCore.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\Z.EntityFramework.Plus.EFCore.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\Z.Expressions.Eval.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\EntityRelationsLab\CarSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

@@ -1,5 +1,6 @@
 ﻿namespace CarSystem.Data.Models
 {
+    using Newtonsoft.Json;
     using System.ComponentModel.DataAnnotations;
     using static DataValidations.Model;
 

@@ -1,10 +1,9 @@
 ﻿namespace CarSystem
 {
     using CarSystem.Data;
-    using CarSystem.Data.Models;
-    using CarSystem.Result;
+    using CarSystem.Data.ViewModels;
     using Microsoft.EntityFrameworkCore;
-    using Z.EntityFramework.Plus;
+    using Newtonsoft.Json;
 
     public class Startup
     {
@@ -12,27 +11,23 @@
         {
             using var db = new CarDbContext();
 
-            using var data = new CarDbContext();
-
-            // bulk delete
-            data.Cars
-                .Where(c => c.Price > 10000)
-                .Delete();
-
-            // bulk update
-            data.Cars
-                .Where(c => c.Price < 20000)
-                .Update(c => new Car
+            var car = db.Cars
+                .Select(c => new CarDTO()
                 {
-                    Price = c.Price * 1.2m
-                });
+                    Price = c.Price,
+                    Model = $"{c.Model.Name} {c.Model.Year}"
+                })
+                .ToList();
 
-            var car = data.Cars
-                .FirstOrDefault(c => c.Id == 1);
+            //var carDTO = new CarDTO()
+            //{
+            //    Price = car.Price,
+            //    Model = $"{car.Model.Name} {car.Model.Year}"
+            //};
 
-             
+            var result = JsonConvert.SerializeObject(car, Formatting.Indented);
 
-            db.SaveChanges();
+            Console.WriteLine(result);
         }
     }
 }
