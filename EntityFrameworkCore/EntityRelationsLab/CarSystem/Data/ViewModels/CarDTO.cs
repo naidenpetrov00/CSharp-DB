@@ -1,15 +1,15 @@
-﻿using CarSystem.Data.Models;
-
-namespace CarSystem.Data.ViewModels
+﻿namespace CarSystem.Data.ViewModels
 {
-    public class CarDTO
+    public class CarDto
     {
+        //public int Id { get; set; }
+
         public decimal Price { get; set; }
 
         public string Color { get; set; }
 
         public string ModelName { get; set; }
 
-        public int ModelYear { get; set; }
+        // public ICollection<CarPurchase> Owners { get; set; }
     }
 }

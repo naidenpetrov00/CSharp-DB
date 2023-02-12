@@ -1,5 +1,6 @@
 ﻿namespace CarSystem.Data.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.ComponentModel.DataAnnotations;
     using static DataValidations.Car;
@@ -21,7 +22,7 @@
         public string Color { get; set; }
 
         public int ModelId { get; set; }
-
+        [JsonIgnore]
         public Model Model { get; set; }
 
         public ICollection<CarPurchase> Owners { get; set; } = new HashSet<CarPurchase>();

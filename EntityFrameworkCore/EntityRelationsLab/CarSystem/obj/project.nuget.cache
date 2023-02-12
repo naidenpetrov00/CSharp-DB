@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "tpVhA4Q+IqdUnTwbcbhT2GppY8YNjfvSh45AkjEihU2wLvy+/OfZPiabNcjhTz4hW8Tyg5sD9SOJjQBf3LGncA==",
+  "dgSpecHash": "Rk4qXCrT3ziiu1zOhJ+7INMLbZ7sd9HxnDgzwLnrUpKZU23DOeJ4ZbS89UvdY6qyoQGopL/nKBt57dlry4ipvA==",
   "success": true,
   "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\EntityRelationsLab\\CarSystem\\CarSystem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Naiden\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
-    "C:\\Users\\Naiden\\.nuget\\packages\\automapper.collection\\4.0.0\\automapper.collection.4.0.0.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\automapper.collection\\5.0.0\\automapper.collection.5.0.0.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\automapper.collection.entityframework\\1.0.1\\automapper.collection.entityframework.1.0.1.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\entityframework\\6.1.3\\entityframework.6.1.3.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -104,5 +106,26 @@
     "C:\\Users\\Naiden\\.nuget\\packages\\z.entityframework.plus.efcore\\7.18.3\\z.entityframework.plus.efcore.7.18.3.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\z.expressions.eval\\5.0.0\\z.expressions.eval.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper.Collection.EntityFramework 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper.Collection.EntityFramework",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.1.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

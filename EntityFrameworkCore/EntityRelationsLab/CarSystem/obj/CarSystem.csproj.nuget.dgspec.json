@@ -42,11 +42,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.1.1, )"
             },
             "AutoMapper.Collection": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[5.0.0, )"
+            },
+            "AutoMapper.Collection.EntityFramework": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
