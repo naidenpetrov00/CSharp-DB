@@ -40,6 +40,8 @@ namespace FastFood.Web
                     Configuration.GetConnectionString("DefaultConnection")));
 
             //TODO add Automapper configuration
+            services.AddAutoMapper(cfg =>
+                cfg.AddProfile<FastFoodProfile>());
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
