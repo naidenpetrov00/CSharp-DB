@@ -1,0 +1,10 @@
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.AssemblyReference.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.CoreCompileInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\AutoMappingObjectsExercise\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb

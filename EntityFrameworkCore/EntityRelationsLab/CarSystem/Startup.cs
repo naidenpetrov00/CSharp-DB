@@ -1,14 +1,12 @@
 ﻿namespace CarSystem
 {
     using AutoMapper;
-    using AutoMapper.EquivalencyExpression;
-    using AutoMapper.QueryableExtensions;
-    using AutoMapper.EntityFramework;
     using CarSystem.Data;
+    using Newtonsoft.Json;
     using CarSystem.Data.Models;
     using CarSystem.Data.ViewModels;
-    using Microsoft.EntityFrameworkCore;
-    using Newtonsoft.Json;
+    using AutoMapper.QueryableExtensions;
+    using AutoMapper.EquivalencyExpression;
 
     public class Startup
     {
@@ -16,12 +14,12 @@
         {
             using var db = new CarDbContext();
 
-            //Mapper.Initialize(cfg =>
-            //{
-            //    cfg.AddCollectionMappers();
-            //    cfg.CreateMap<Car, CarDTO>()
-            //    .ReverseMap();
-            //});
+            Mapper.Initialize(cfg =>
+            {
+                cfg.AddCollectionMappers();
+                cfg.CreateMap<Car, CarDto>()
+                .ReverseMap();
+            });
 
             //var car = db.Cars
             //    .FirstOrDefault();
@@ -93,8 +91,11 @@
             );
 
             var car = db.Cars
-                .Include(c=>c.Model)
                 .Where(c => c.Color == "Black")
+                .Select(c => new CarDto()
+                {
+                    Price = c.Price
+                })
                 .FirstOrDefault();
 
             var mapper = config.CreateMapper();
