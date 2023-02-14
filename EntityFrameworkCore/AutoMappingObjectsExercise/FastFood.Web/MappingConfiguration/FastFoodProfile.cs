@@ -4,6 +4,7 @@
 	using FastFood.Web.ViewModels.Categories;
 	using FastFood.Web.ViewModels.Employees;
 	using FastFood.Web.ViewModels.Items;
+	using FastFood.Web.ViewModels.Orders;
 	using Microsoft.EntityFrameworkCore.Internal;
 	using Models;
 
@@ -46,6 +47,17 @@
 			this.CreateMap<Item, ItemsAllViewModels>()
 				.ForMember(x => x.CategoryName, y => y.MapFrom(s => s.Name));
 
+			//Orders
+			//this.CreateMap<Item, CreateOrderViewModel>();
+			this.CreateMap<CreateOrderInputModel, Order>();
+
+			this.CreateMap<CreateOrderInputModel, Item>()
+				.ForMember(x => x.Id, y => y.MapFrom(s => s.ItemId));
+
+			this.CreateMap<Order, OrderAllViewModel>()
+				.ForMember(x => x.OrderId, y => y.MapFrom(s => s.Id))
+				.ForMember(x => x.Employee, y => y.MapFrom(s => s.Employee.Name))
+				.ForMember(x => x.DateTime, y => y.MapFrom(s => s.DateTime.ToString()));
 		}
 	}
 }
