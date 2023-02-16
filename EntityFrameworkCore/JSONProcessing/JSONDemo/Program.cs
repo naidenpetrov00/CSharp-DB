@@ -1,6 +1,7 @@
 ﻿namespace JSONDemo
 {
 	using Newtonsoft.Json;
+	using Newtonsoft.Json.Serialization;
 
 	public class Program
 	{
@@ -10,9 +11,14 @@
 
 			var products = JsonConvert.DeserializeObject<ProductDto[]>(inputJson);
 
+			var resolver = new DefaultContractResolver()
+			{
+				NamingStrategy = new KebabCaseNamingStrategy()
+			}; 
+
 			var json = JsonConvert.SerializeObject(products, Formatting.Indented);
 
 			Console.WriteLine(json);
 		}
 	}
-}
+} 
