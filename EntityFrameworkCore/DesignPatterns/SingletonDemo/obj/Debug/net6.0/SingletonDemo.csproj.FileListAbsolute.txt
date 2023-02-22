@@ -1,0 +1,15 @@
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\bin\Debug\net6.0\SingletonDemo.exe
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\bin\Debug\net6.0\SingletonDemo.deps.json
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\bin\Debug\net6.0\SingletonDemo.runtimeconfig.json
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\bin\Debug\net6.0\SingletonDemo.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\bin\Debug\net6.0\SingletonDemo.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.csproj.AssemblyReference.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.AssemblyInfoInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.AssemblyInfo.cs
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.csproj.CoreCompileInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\refint\SingletonDemo.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\SingletonDemo.genruntimeconfig.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\DesignPatterns\SingletonDemo\obj\Debug\net6.0\ref\SingletonDemo.dll
