@@ -1,9 +1,14 @@
 ﻿namespace PetStore.Data.Models
 {
+	using static DataValidation;
+	using System.ComponentModel.DataAnnotations;
+
 	public class Food
 	{
 		public int Id { get; set; }
 
+		[Required]
+		[MaxLength(NameMaxLength)]
 		public string Name { get; set; }
 
 		public double Weight { get; set; }

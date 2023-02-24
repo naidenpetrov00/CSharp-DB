@@ -3,7 +3,7 @@
 	public class DataSettings
 	{
 		public const string Connection = "Server=DESKTOP-ERAGAG4\\SQLEXPRESS;" +
-			"Database=CarSystem;" +
+			"Database=PetStoreCatalog;" +
 			"Integrated Security = True;" +
 			"Encrypt = False";
 	}
