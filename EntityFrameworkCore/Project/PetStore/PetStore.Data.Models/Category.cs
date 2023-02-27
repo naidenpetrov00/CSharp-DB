@@ -12,7 +12,7 @@
 		public string Name { get; set; }
 
 		[MaxLength(DescriptionMaxlength)]
-		public string Description { get; set; }
+		public string? Description { get; set; }
 
 		public ICollection<Pet> Pets { get; set; } = new HashSet<Pet>();
 

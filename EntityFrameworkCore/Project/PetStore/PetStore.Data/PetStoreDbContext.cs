@@ -7,7 +7,7 @@
 		public DbSet<Brand> Brands { get; set; }
 		public DbSet<Breed> Breeds { get; set; }
 		public DbSet<Category> Categories { get; set; }
-		public DbSet<Food> Foods { get; set; }
+		public DbSet<Food> Food { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<Pet> Pets { get; set; }
 		public DbSet<Toy> Toys { get; set; }

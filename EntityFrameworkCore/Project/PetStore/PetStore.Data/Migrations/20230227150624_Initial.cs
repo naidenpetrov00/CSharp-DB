@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PetStore.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -66,13 +66,14 @@ namespace PetStore.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Foods",
+                name: "Food",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Weight = table.Column<double>(type: "float", nullable: false),
+                    DistributorPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ExpirationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     BrandId = table.Column<int>(type: "int", nullable: false),
@@ -80,15 +81,15 @@ namespace PetStore.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Foods", x => x.Id);
+                    table.PrimaryKey("PK_Food", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Foods_Brands_BrandId",
+                        name: "FK_Food_Brands_BrandId",
                         column: x => x.BrandId,
                         principalTable: "Brands",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Foods_Categories_CategoryId",
+                        name: "FK_Food_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
@@ -104,6 +105,7 @@ namespace PetStore.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DistributorPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     BrandId = table.Column<int>(type: "int", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -156,9 +158,9 @@ namespace PetStore.Data.Migrations
                 {
                     table.PrimaryKey("PK_FoodOrder", x => new { x.FoodId, x.OrderId });
                     table.ForeignKey(
-                        name: "FK_FoodOrder_Foods_FoodId",
+                        name: "FK_FoodOrder_Food_FoodId",
                         column: x => x.FoodId,
-                        principalTable: "Foods",
+                        principalTable: "Food",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -231,19 +233,19 @@ namespace PetStore.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_FoodOrder_OrderId",
-                table: "FoodOrder",
-                column: "OrderId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Foods_BrandId",
-                table: "Foods",
+                name: "IX_Food_BrandId",
+                table: "Food",
                 column: "BrandId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Foods_CategoryId",
-                table: "Foods",
+                name: "IX_Food_CategoryId",
+                table: "Food",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FoodOrder_OrderId",
+                table: "FoodOrder",
+                column: "OrderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_UserId",
@@ -300,7 +302,7 @@ namespace PetStore.Data.Migrations
                 name: "ToyOrder");
 
             migrationBuilder.DropTable(
-                name: "Foods");
+                name: "Food");
 
             migrationBuilder.DropTable(
                 name: "Breeds");

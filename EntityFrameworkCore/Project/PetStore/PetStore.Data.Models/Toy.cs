@@ -1,7 +1,7 @@
 ﻿namespace PetStore.Data.Models
 {
-	using System.ComponentModel.DataAnnotations;
 	using static DataValidation;
+	using System.ComponentModel.DataAnnotations;
 
 	public class Toy
 	{
@@ -15,6 +15,8 @@
 		public string Description { get; set; }
 
 		public decimal Price { get; set; }
+
+		public decimal DistributorPrice { get; set; }
 
 		public int BrandId { get; set; }
 

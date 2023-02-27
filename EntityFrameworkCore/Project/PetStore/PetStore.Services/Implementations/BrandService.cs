@@ -42,7 +42,7 @@
 				.Where(b => b.Name.ToLower().Contains(name.ToLower()))
 				.Select(b => new BrandListingServiceModel
 				{
-					Id= b.Id,
+					Id = b.Id,
 					Name = b.Name,
 				})
 				.ToList();

@@ -7,11 +7,12 @@
 	{
 		public static void Main()
 		{
+
 			using var data = new PetStoreDbContext();
 
-			var brandService = new BrandService(data);
+			var foodService = new FoodService(data);
 
-			brandService.Create("Purrina");
+			foodService.BuyFromDistributor("Meat", 0.350, 1.5m, 0.3, DateTime.UtcNow, 1, 2);
 		}
 	}
 }

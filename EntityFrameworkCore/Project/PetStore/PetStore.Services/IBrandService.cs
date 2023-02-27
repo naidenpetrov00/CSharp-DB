@@ -1,5 +1,6 @@
 ﻿namespace PetStore.Services
 {
+	using PetStore.Data.Models;
 	using PetStore.Services.Models.Brand;
 
 	public interface IBrandService

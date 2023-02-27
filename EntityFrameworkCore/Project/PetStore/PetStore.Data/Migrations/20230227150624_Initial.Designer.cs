@@ -12,8 +12,8 @@ using PetStore.Data.Models;
 namespace PetStore.Data.Migrations
 {
     [DbContext(typeof(PetStoreDbContext))]
-    [Migration("20230224171504_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230227150624_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,6 +98,9 @@ namespace PetStore.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("DistributorPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<DateTime>("ExpirationDate")
                         .HasColumnType("datetime2");
 
@@ -118,7 +121,7 @@ namespace PetStore.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Foods");
+                    b.ToTable("Food");
                 });
 
             modelBuilder.Entity("PetStore.Data.Models.FoodOrder", b =>
@@ -221,6 +224,9 @@ namespace PetStore.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
+
+                    b.Property<decimal>("DistributorPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Name")
                         .IsRequired()
