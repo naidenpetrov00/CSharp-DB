@@ -8,5 +8,7 @@
 		int Create(string name);
 
 		IEnumerable<BrandListingServiceModel> SearchByName(string name);
+
+		bool Exists(string name);
 	}
 }

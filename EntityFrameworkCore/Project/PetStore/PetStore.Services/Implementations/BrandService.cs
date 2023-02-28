@@ -20,7 +20,7 @@
 				throw new InvalidOperationException($"Name cannot be more than ${DataValidation.NameMaxLength}");
 			}
 
-			if (this.data.Brands.Any(b => b.Name == name))
+			if (this.Exists(name))
 			{
 				throw new InvalidOperationException($"Brand name {name} already exists");
 			}
@@ -34,6 +34,11 @@
 			this.data.SaveChanges();
 
 			return brand.Id;
+		}
+
+		public bool Exists(string name)
+		{
+			return this.data.Brands.Any(b => b.Name == name);
 		}
 
 		public IEnumerable<BrandListingServiceModel> SearchByName(string name)

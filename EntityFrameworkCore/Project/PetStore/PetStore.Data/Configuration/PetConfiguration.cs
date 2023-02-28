@@ -9,6 +9,13 @@
 		public void Configure(EntityTypeBuilder<Pet> builder)
 		{
 			builder
+				.HasKey(x => x.Id);
+
+			builder
+				.Property(p => p.OrderId)
+				.IsRequired(false);
+
+			builder
 				.HasOne(p => p.Breed)
 				.WithMany(b => b.Pets)
 				.HasForeignKey(b => b.BreedId)

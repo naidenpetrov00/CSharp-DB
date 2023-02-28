@@ -1,7 +1,7 @@
 ﻿namespace PetStore.Data.Models
 {
-	using System.ComponentModel.DataAnnotations;
 	using static DataValidation;
+	using System.ComponentModel.DataAnnotations;
 
 	public class Pet
 	{
@@ -14,7 +14,7 @@
 		public decimal Price { get; set; }
 
 		[MaxLength(DescriptionMaxlength)]
-		public string Description { get; set; }
+		public string? Description { get; set; }
 
 		public int BreedId { get; set; }
 

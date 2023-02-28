@@ -6,10 +6,12 @@
 	public class FoodService : IFoodService
 	{
 		private readonly PetStoreDbContext data;
+		private readonly IUserService userService;
 
-		public FoodService(PetStoreDbContext data)
+		public FoodService(PetStoreDbContext data, IUserService userService)
 		{
 			this.data = data;
+			this.userService = userService;
 		}
 
 		public void BuyFromDistributor(string name, double weight, decimal price,
@@ -61,6 +63,40 @@
 			};
 
 			this.data.Food.Add(food);
+			this.data.SaveChanges();
+		}
+
+		public bool Exists(int id)
+		{
+			return this.data.Food.Any(f => f.Id == id);
+		}
+
+		public void SellFoodToUser(int foodId, int userId)
+		{
+			if (!this.Exists(foodId))
+			{
+				throw new ArgumentException("There is no such food");
+			}
+			if (!this.userService.Exists(userId))
+			{
+				throw new ArgumentException("There is no such user");
+			}
+
+			var order = new Order()
+			{
+				PurchaseDate = DateTime.UtcNow,
+				Status = OrderStatus.Done,
+				UserId = userId
+			};
+
+			var foodOrder = new FoodOrder()
+			{
+				FoodId = foodId,
+				Order = order
+			};
+
+			this.data.Orders.Add(order);
+			this.data.FoodOrders.Add(foodOrder);
 			this.data.SaveChanges();
 		}
 	}
