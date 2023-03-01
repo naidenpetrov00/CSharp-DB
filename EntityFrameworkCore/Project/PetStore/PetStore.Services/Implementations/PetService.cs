@@ -6,6 +6,8 @@
 
 	public class PetService : IPetService
 	{
+		private const int PetsPageSize = 25;
+
 		private readonly PetStoreDbContext data;
 		private readonly IBreedService breedService;
 		private readonly ICategoryService categoryService;
@@ -79,9 +81,11 @@
 			.Pets
 			.Any(p => p.Id == id);
 
-		public IEnumerable<PetListingServiceModel> All()
+		public IEnumerable<PetListingServiceModel> All(int page = 1)
 			=> this.data
 			.Pets
+			.Skip((page - 1) * PetsPageSize)
+			.Take(PetsPageSize)
 			.Select(p => new PetListingServiceModel()
 			{
 				Id = p.Id,
