@@ -159,7 +159,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

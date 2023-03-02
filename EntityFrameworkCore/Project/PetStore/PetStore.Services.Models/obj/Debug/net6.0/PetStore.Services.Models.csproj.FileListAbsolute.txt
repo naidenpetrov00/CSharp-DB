@@ -10,3 +10,6 @@ C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Servic
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\obj\Debug\net6.0\refint\PetStore.Services.Models.dll
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\obj\Debug\net6.0\PetStore.Services.Models.pdb
 C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\obj\Debug\net6.0\ref\PetStore.Services.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\bin\Debug\net6.0\PetStore.Data.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\bin\Debug\net6.0\PetStore.Data.Models.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Project\PetStore\PetStore.Services.Models\obj\Debug\net6.0\PetStore.Services.Models.csproj.CopyComplete

@@ -1,4 +1,4 @@
-﻿namespace PetStore.Web.Models.Pets
+﻿namespace PetStore.Web.Models.Pet
 {
 	public class PetListingResponseModel
 	{

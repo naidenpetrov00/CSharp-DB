@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zZuVIF/zYia4LCTE+wkX2hsWSD3Dcfql9cwA4rc9pu5G8F4w722W2yEEHjTsHAiOTpr4GFYaDwMpZ0I89aizpQ==",
+  "dgSpecHash": "1yYeEcl6Z2EKh0VMNVZGYCD3l34cO0p37u+x6EfPua5GTmmfsqcVEgH/sjB0nXXThyRZ5hxcnpY30yLraqwctQ==",
   "success": true,
   "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
   "expectedPackageFiles": [

@@ -1,10 +1,12 @@
-﻿@model IEnumerable<PetListingServiceModel>
+﻿@model AllPetsViewModel
 
 <h1>All Pets</h1>
 
 <div>
-	<a href=" " calss="float-left btn btn-info">Pref</a>
-	<a href="" calss="float-left btn btn-info">Next</a>
+	<a href="/Pets/All?page=@Model.PreviousPage"
+	   class="float-left btn btn-info @(Model.PreviousDisabled ? "disabled" : string.Empty)">Pref</a>
+	<a href="/Pets/All?page=@Model.NextPage"
+	   class="float-left btn btn-info @(Model.NextDisabled ? "disabled" : string.Empty)">Next</a>
 </div>
 
 <table class="table table-bordered table-striped">
@@ -18,8 +20,11 @@
 		<th>
 			Price
 		</th>
+		<th>
+
+		</th>
 	</tr>
-	@foreach (var pet in Model)
+	@foreach (var pet in Model.Pets)
 	{
 		<tr>
 			<td>
@@ -31,6 +36,9 @@
 			<td>
 				$@pet.Price
 			</td>
+			<td>
+				<a href="/Pets/Delete/@pet.Id" class="btn btn-danger btn small">Delete</a>
+		</td>
 		</tr>
 	}
 </table>

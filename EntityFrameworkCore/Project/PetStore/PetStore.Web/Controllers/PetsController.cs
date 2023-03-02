@@ -1,8 +1,8 @@
 ﻿namespace PetStore.Web.Controllers
 {
-	using Microsoft.AspNetCore.Mvc;
 	using PetStore.Services;
-	using PetStore.Services.Models.Pet;
+	using PetStore.Web.Models.Pet;
+	using Microsoft.AspNetCore.Mvc;
 
 	public class PetsController : Controller
 	{
@@ -14,8 +14,40 @@
 		public IActionResult All(int page = 1)
 		{
 			var allPets = this.pets.All(page);
+			var totalPets = this.pets.Total();
 
-			return View(allPets);
+			var model = new AllPetsViewModel
+			{
+				Pets = allPets,
+				CurrentPage = page,
+				Total = totalPets
+			};
+
+			return View(model);
+		}
+
+		public IActionResult Delete(int id)
+		{
+			var pet = this.pets.Details(id);
+
+			if (pet == null)
+			{
+				return NotFound();
+			}
+
+			return View(pet);
+		}
+
+		public IActionResult ConfirmDelete(int id)
+		{
+			var deleted = this.pets.Delete(id);
+
+			if (!deleted)
+			{
+				return BadRequest();
+			}
+
+			return RedirectToAction(nameof(All));
 		}
 	}
 }
