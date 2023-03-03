@@ -1,0 +1,17 @@
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Services.deps.json
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Services.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Services.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Data.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Data.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Services.Models.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Data.Models.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Data.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\bin\Debug\netstandard2.0\PetStore.Services.Models.pdb
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.csproj.AssemblyReference.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.AssemblyInfoInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.AssemblyInfo.cs
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.csproj.CoreCompileInputs.cache
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.csproj.CopyComplete
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.dll
+C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Services\PetStore.Services\obj\Debug\netstandard2.0\PetStore.Services.pdb

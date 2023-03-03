@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = PetStore.Data
+build_property.ProjectDir = C:\Naiden\Softuni\CSharp-DB\EntityFrameworkCore\Projects\PetStore2\Data\PetStore.Data\

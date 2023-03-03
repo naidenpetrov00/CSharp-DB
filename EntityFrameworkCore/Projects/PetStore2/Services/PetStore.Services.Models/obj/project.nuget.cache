@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SUd4HqZVbb/1eLZKm4XVRUJE5E8F/LoREPxwnBtcBglVcLfxV8Qw2UJ/tCnTmm1dTvSCTA0rnstLGPxJYgG3Mw==",
+  "success": true,
+  "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore2\\Services\\PetStore.Services.Models\\PetStore.Services.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Naiden\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Naiden\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
