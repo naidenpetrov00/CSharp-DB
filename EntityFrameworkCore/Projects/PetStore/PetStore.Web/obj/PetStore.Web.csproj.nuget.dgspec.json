@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj": {}
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj": {}
   },
   "projects": {
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
+        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
         "projectName": "PetStore.Data.Models",
-        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
+        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
         "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\obj\\",
+        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj",
+        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj",
         "projectName": "PetStore.Data",
-        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj",
+        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj",
         "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\obj\\",
+        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
               }
             }
           }
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj": {
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj",
+        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj",
         "projectName": "PetStore.Services.Models",
-        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj",
+        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj",
         "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\obj\\",
+        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
               }
             }
           }
@@ -195,14 +195,14 @@
         }
       }
     },
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj",
+        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj",
         "projectName": "PetStore.Services",
-        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj",
+        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj",
         "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\obj\\",
+        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,14 +219,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj"
               },
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
               },
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services.Models\\PetStore.Services.Models.csproj"
               }
             }
           }
@@ -260,14 +260,14 @@
         }
       }
     },
-    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj": {
+    "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
+        "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
         "projectName": "PetStore.Web",
-        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
+        "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
         "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\obj\\",
+        "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -284,11 +284,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
               },
-              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
-                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj"
+              "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
+                "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj"
               }
             }
           }

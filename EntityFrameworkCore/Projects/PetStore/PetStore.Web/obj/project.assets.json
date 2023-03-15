@@ -10382,11 +10382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
+      "projectUniqueName": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
       "projectName": "PetStore.Web",
-      "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
+      "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\PetStore.Web.csproj",
       "packagesPath": "C:\\Users\\Naiden\\.nuget\\packages\\",
-      "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Web\\obj\\",
+      "outputPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Naiden\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10403,11 +10403,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
-              "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
+            "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj": {
+              "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data\\PetStore.Data.csproj"
             },
-            "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
-              "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Services\\PetStore.Services.csproj"
+            "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj": {
+              "projectPath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Services\\PetStore.Services.csproj"
             }
           }
         }

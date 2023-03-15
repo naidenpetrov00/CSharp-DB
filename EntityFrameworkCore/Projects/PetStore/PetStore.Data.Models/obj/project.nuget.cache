@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JydI2LiNGf87bdDV+fJNG2qnlozl7xu6gvu9K8pUZP0zj8rZfCD7zK0xIix+60R6sBqJGymTLuHfJ072krSGhg==",
+  "dgSpecHash": "fuyjn9VJfkhaZmExtQ0I3xonQPPHQcNdOs5tOHICCFu2zEUms35417nudEXUNH+yVgrxBXulvkxspaVgdvQ5lw==",
   "success": true,
-  "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Project\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
+  "projectFilePath": "C:\\Naiden\\Softuni\\CSharp-DB\\EntityFrameworkCore\\Projects\\PetStore\\PetStore.Data.Models\\PetStore.Data.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Naiden\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
